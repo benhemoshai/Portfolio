@@ -1,0 +1,75 @@
+.gradient-background {
+    background: linear-gradient(300deg, #d7a6f7ed, #0098fe95, #ffffff);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .nav-link{
+    position: relative;
+    margin-right: 100px;
+  }
+  .nav-link::after{
+    content: '';
+    opacity: 0;
+    transition: all 0.2s;
+    height: 2px;
+    width: 100%;
+    background-color: azure;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .nav-link:hover::after{
+    opacity: 1;
+  }
+  #skills {
+    background-color: #f8f9fa;
+  }
+  
+  #skills h2 {
+    font-weight: 700;
+    color: #343a40;
+  }
+  
+  .skill-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .skill-card .icon {
+    font-size: 50px;
+    color: #000000;
+  }
+  
+  .skill-card h4 {
+    font-weight: 600;
+    margin-top: 15px;
+    color: #343a40;
+  }
+  
+  .skill-card p {
+    color: #0088ff;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
